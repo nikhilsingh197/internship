@@ -1,4 +1,4 @@
-const data=[12,"ani",true,false,001,[2,4,9,1001,7]]
+const data=[12,"ani",true,false,1,[2,4,9,1001,7]]
 console.log("array before use of functions=  "+data)
 data[3]=21
 console.log("length=  "+ data.length)
