@@ -1,0 +1,1 @@
+ console.log("maximum number in the array is =  " + max);
