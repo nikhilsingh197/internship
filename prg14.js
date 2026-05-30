@@ -25,13 +25,29 @@ function findnews(data, id) {
       console.log(data[i].news);
     }
   }
+
+}
   function tlimit(data) {
     console.log("total news = " + data.length);
   }
   function blimit(data) {
     console.log("news from last = " + data.length);
   }
+
+function printnews(data,keyword)
+{
+  result=[];
+  for(let i=0;i<data.length;i++)
+  {
+    if(data[i].news.includes(keyword))
+    {
+      result.push(data[i]);
+    }
+  }
+  return result;
 }
+
 console.log(findnews(data, "a"));
 console.log(tlimit(data));
 console.log(blimit(data));
+console.log(printnews(data, "pakistan"));
